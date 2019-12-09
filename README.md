@@ -1,7 +1,5 @@
 # Ed O C
 
-Welcome Ed,
-
-We have preinstalled all of the tools you need to get started.
+https://novicetheaf.github.io/bootstrap4/.
 
 Happy coding!
