@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/4a795257bd.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -39,9 +42,9 @@
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
             <a  href="/login">Sign In / Sign Up</a>
         </nav>
-        <article class="container mt-3">
-            <div class="row d-none d-sm-block">
-                <div class="row">
+        <!--commented out
+            <div class="container alert-container">
+                <div class="row d-none d-sm-block">
                     <div class="col-12">
                         <div class="alert alert-warning">
                             <strong>Sale Now On!</strong> We've got a sale on. Get a 12 months subscription for 6! <a href="">See here for details!</a>
@@ -49,58 +52,73 @@
                     </div>
                 </div>
             </div>
+        -->
+
+        <div class="container-fluid callout-container">
             <!-- Callout Class -->
+            <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
                 <div class="col-12">
                     <section class="callout jumbotron text-center">
-                        <h1>The finest whisky delivered to your doorstep.</h1>
+                        <h1 class="jumbotron-header">The finest whisky delivered to your doorstep.</h1>
+                        <hr class="block-divider block-divider--color">
                         <p class="lead">up today to start receiving the world's best whisky every month. 
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+                    <button class="btn btn-lg bt--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
                         <p><small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
                     </section>
                 </div>
             </div>
-            <!-- End Callout Class -->
+        </div>
+         <!-- End Callout Class -->
+
+        
+
+
             <!--User Quotes-->
-            <section class="quotes">
-                <div class="row">
-                    <div class="col-12 my-5">
-                        <h2 class="text-uppercase">Quotes</h2>
+            <div class="container quotes-container">
+                <section class="quotes">
+                    <div class="row">
+                        <div class="col-12 my-5">
+                            <h2 class="text-uppercase">Quotes</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="media">
-                            <div class="d-none d-sm-block">
-                                <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p>I've been introduced to more than 10 great international whiskeys I knew about</p>
+                                        <p>- Susan Connors</p>
+                                    </blockquote>
+                                </div>
                             </div>
-                            <div class="media-body">
-                                <blockquote class="blockquote">
-                                    <p>I've been introduced to more than 10 great international whiskeys I knew about</p>
-                                    <p>- Susan Connors</p>
-                                </blockquote>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="media">
+                                <div class="d-none d-sm-block">
+                                    <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                                </div>
+                                <div class="media-body">
+                                    <blockquote class="blockquote">
+                                        <p>I haven't been sober for months!</p>
+                                        <p>- John Doe</p>
+                                    </blockquote>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="media">
-                            <div class="d-none d-sm-block">
-                                <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="blockquote">
-                                    <p>I haven't been sober for months!</p>
-                                    <p>- John Doe</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>    
+            </div>
             <!--End User Quotes-->
+
+        <!--Features-->
+        <div class="features container">
             <section class="features">
                 <div class="row">
                     <div class="col-12 my-5">
@@ -131,9 +149,10 @@
                     </div>
                 </div>
             </section>
-        </article>
-
-
+        </div>
+        <!--End Of Features-->
+        
+        
         <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
