@@ -1,6 +1,6 @@
 # Ed O C
 
-Welcome USER_NAME,
+Welcome Ed,
 
 We have preinstalled all of the tools you need to get started.
 
